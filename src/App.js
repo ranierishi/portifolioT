@@ -47,11 +47,11 @@ export default function App() {
 
                <li>                  
                 <span>
-                  <h2>Oficina da Cooperação OCEMG</h2>
-                  <h3>Aplicativos & Marketing & Simuladores</h3>
-                  <h5>O Sistema OCEMG (Sindicato e Organização das Cooperativas do Estado de Minas Gerais) é um órgão de representação política, sindical-patronal e de defesa do cooperativismo em Minas. Nesse contexto, uma oficina com pequenas dinâmicas divertidas é realizada nas cooperativas para unir e conscientizar.
-                      A Gaz Games se uniu a esse processo no intuito de gamificar, modernizar e melhorar esse sistema de dinâmicas com uma plataforma digital de jogos, para edição e reprodução, apresentando uma solução robusta em rede, mesclando iPads e um computador.
-                      Atualmente carregado com quatro jogos de mecânica clássica, a plataforma já está sendo utilizada ao longo do estado, trazendo informação e diversão.
+                  <h2>Robbyson Land</h2>
+                  <h3>Aplicativos & Realidade Aumentada & Games</h3>
+                  <h5>Desenvolvido em 2016/7, com suporte de atualizações até os dias atuais, Robbyson Land é um jogo produzido em parceria com a AeC e a marca Robbyson, para divulgar, entreter e estreitar as relações dos usuários e a plataforma Robbyson.
+                  Através de um mundo em miniatura, com personagens e locais fictícios da cidade Robbyson Land, o jogador tem tarefas como cuidar do seu avatar, ter uma carreira e ir ao trabalho, à faculdade, responder à necessidades da cidade e seus habitantes, enquanto pode se divertir com jogos e personalizar o seu avatar.
+                  Disponível na Google Play e App Store, Robbyson Land é um jogo de gerenciamento de personagem, divertido e que une os universos corporativo e lúdico.
                   </h5>
                 </span>
                 <PlayerWrapper>
