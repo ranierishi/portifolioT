@@ -1,15 +1,27 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import {Container,Section, Section2, Section3, Footer, PlayerWrapper} from './styles'
 import ReactPlayer from 'react-player'
 import FormikForm from "./FormikForm";
 
 
-export default function App() {
+export default function App({ scroll }) {
+  const myRef = useRef(null)
+
+  useEffect( () => {
+    console.log("scroll => ", scroll)
+    function scrollToRef(ref) {
+      window.scrollTo(0, ref.current.offsetTop)
+    }
+    scrollToRef(myRef)
+  }, [scroll])
+     
+  // General scroll to element function
+
+
   return (
     <Container>     
 
-      <Section >
-        <span>
+      <Section >      
 
         <div>
           <h1>Arthur Iung</h1>
@@ -21,7 +33,7 @@ export default function App() {
           </h3>
         
         </div>
-        </span>
+        
           <img src={require('./img/img3.jpeg')}
           alt=''></img>
       </Section>
@@ -29,7 +41,7 @@ export default function App() {
       <Section2>
         <article>
 
-          <div>
+          <div ref={myRef}>
             <h1> Projects </h1>
           </div>
           
@@ -44,7 +56,7 @@ export default function App() {
                   </h5>
                 </span>
                 <PlayerWrapper>
-                  <ReactPlayer  url='https://youtu.be/bCOh6BBPCRQ' />
+                  <ReactPlayer width='100%' height='100%' url='https://youtu.be/bCOh6BBPCRQ' />
                 </PlayerWrapper>
                </li>
 
@@ -58,7 +70,7 @@ export default function App() {
                   </h5>
                 </span>
                 <PlayerWrapper>
-                  <ReactPlayer  url='https://youtu.be/wc0V4g6At1s' />
+                  <ReactPlayer width='100%' height='100%' url='https://youtu.be/wc0V4g6At1s' />
                 </PlayerWrapper>
                </li>
                
@@ -73,7 +85,7 @@ export default function App() {
                   </h5>
                 </span>
                 <PlayerWrapper>
-                  <ReactPlayer  url='https://youtu.be/OZHyD7Si1jg' />
+                  <ReactPlayer width='100%' height='100%' url='https://youtu.be/OZHyD7Si1jg' />
                 </PlayerWrapper>
                </li>
 
@@ -87,7 +99,7 @@ export default function App() {
                   </h5>
                 </span>
                 <PlayerWrapper>
-                  <ReactPlayer  url='https://youtu.be/YN3HJnzGPGU' />
+                  <ReactPlayer width='100%' height='100%' url='https://youtu.be/YN3HJnzGPGU' />
                 </PlayerWrapper>
                </li>
 
@@ -100,7 +112,7 @@ export default function App() {
                   </h5>
                 </span>
                 <PlayerWrapper>
-                  <ReactPlayer  url='https://youtu.be/2pMnogYJ5OI' />
+                  <ReactPlayer width='100%' height='100%' url='https://youtu.be/2pMnogYJ5OI' />
                 </PlayerWrapper>
                </li>
 
@@ -114,7 +126,7 @@ export default function App() {
                   </h5>
                 </span>
                 <PlayerWrapper>
-                  <ReactPlayer  url='https://youtu.be/ONHiyG7j-GY' />
+                  <ReactPlayer width='100%' height='100%' url='https://youtu.be/ONHiyG7j-GY' />
                 </PlayerWrapper>
                </li>
 
@@ -128,7 +140,7 @@ export default function App() {
                   </h5>
                 </span>
                 <PlayerWrapper>
-                  <ReactPlayer  url='https://youtu.be/hc_l70tvYnI' />
+                  <ReactPlayer width='100%' height='100%' url='https://youtu.be/hc_l70tvYnI' />
                 </PlayerWrapper>
                </li>
 
@@ -142,7 +154,7 @@ export default function App() {
                   </h5>
                 </span>
                 <PlayerWrapper>
-                  <ReactPlayer  url='https://youtu.be/fCwD5xMMJB8' />
+                  <ReactPlayer width='100%' height='100%' url='https://youtu.be/fCwD5xMMJB8' />
                 </PlayerWrapper>
                </li>
 
@@ -156,7 +168,7 @@ export default function App() {
                   </h5>
                 </span>
                 <PlayerWrapper>
-                  <ReactPlayer  url='https://youtu.be/xvl5pk-MNWw' />
+                  <ReactPlayer width='100%' height='100%' url='https://youtu.be/xvl5pk-MNWw' />
                 </PlayerWrapper>
                </li>
               

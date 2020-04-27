@@ -22,6 +22,7 @@ export const Header = styled.div`
     display:inline;
   }
   
+  
 `;
 
 export const Title = styled.h1`
@@ -30,11 +31,15 @@ export const Title = styled.h1`
   color: #ddd;
   font-family: Arial, Helvetica, sans-serif;
 
-  h1{
+  
+  button{
     padding: 10px;
     border: 2px solid white;
+    background-color:black;
     border-radius: 5px;
-    font-size:1vw;
+    color:white;
+    font-size:1.2vw;
+    cursor:pointer;
   }
 `;
 
@@ -49,7 +54,7 @@ export const Container = styled.div`
 `;
 
 export const Section = styled.div`  
-  height:100vh;
+  height:100%;
   
   img{
     max-width:100%;
@@ -60,7 +65,7 @@ export const Section = styled.div`
     
     position:absolute;
     width:30vw;
-    height:50vh;
+    
     margin:8% 5%;
   }
   h1{
@@ -89,21 +94,27 @@ export const Section = styled.div`
 
 export const PlayerWrapper = styled.div`
     display:inline-block;
+    padding:20px;
+    padding-bottom:0px;
+    width:100%;
+    max-width:640px;
 `;
 
 export const Section2 = styled.div`
     font-family: 'Roboto', sans-serif;
-    background-color:#eee;
+    background-color:#fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-
+    
     span{
-      display:inline-block;        
+      display:flex; 
+      flex-direction:column;
+
     }
     article{
 
       width: 90%;
       margin: 0 auto;
-      margin-top: -180px;
+      
 
     }
     ul{
@@ -112,11 +123,11 @@ export const Section2 = styled.div`
     }
     li{
       padding: 30px;
+      justify-content:space-between ;
+      display:flex;
     }
     h1{  
-      font-size:2vw;    
-      
-      
+      font-size:2vw;          
       padding:20px;
       margin-left: 30px;
       
@@ -139,8 +150,22 @@ export const Section2 = styled.div`
       margin-left: 50px;
       text-align:justify;
       width:35vw;
+      max-height:252px;
+      overflow-y:auto;
       
       
+    }
+    h5::-webkit-scrollbar{
+      width: 8px;
+    }
+    h5::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    }
+
+    h5::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(51,207,255, 0.8);
     }
 `;
 
