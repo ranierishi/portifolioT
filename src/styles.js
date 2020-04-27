@@ -92,7 +92,7 @@ export const PlayerWrapper = styled.div`
 `;
 
 export const Section2 = styled.div`
-    font-family: monospace, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color:#eee;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 
@@ -133,10 +133,13 @@ export const Section2 = styled.div`
     }
 
     h5{
+      font-weight:400;
       padding:20px;
+      font-size:1vw;
       margin-left: 50px;
       text-align:justify;
       width:35vw;
+      
       
     }
 `;
@@ -152,7 +155,7 @@ export const Section3 = styled.div`
 `;
 
 export const Footer = styled.div`
-  font-family: Arial, Helvetica, sans-serif;
+  
   background-color: #000;  
   min-height: 10vh;
   padding: 20px;

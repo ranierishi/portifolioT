@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import Menu from './menu'
 import GlobalStyle from './styles/global'
+import "typeface-roboto";
 
 
 ReactDOM.render(

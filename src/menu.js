@@ -11,8 +11,8 @@ export default function Menu() {
         <Title>Arthur Iung</Title>
         <div>
 
-        <Title><h1>Portifolio</h1></Title>
-        <Title><h1>Resume</h1></Title>
+        <Title><h1>Projects</h1></Title>
+        
         </div>
       </Header>
 

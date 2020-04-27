@@ -9,10 +9,10 @@ export default createGlobalStyle`
 }
 html, body, #root{
   min-height: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 
-body{
-  
+body{  
   -webkit-font-smoothing: antialised !important;
 }
 

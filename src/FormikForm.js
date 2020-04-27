@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-
+import './Form.css'
 
 export default () => {
   const [name,setName] = useState('');
@@ -46,28 +46,34 @@ export default () => {
 
   return (
     <div className="App">
-    <form onSubmit={handleSubmit} action="/thank-you/">
-          <p>
-            <label>
-              Your Name: <input type="text" name="name" value={name} onChange={handleChange} />
-            </label>
-          </p>
-          <p>
-            <label>
-              Your Email: <input type="email" name="email" value={email} onChange={handleChange} />
-            </label>
-          </p>
-          <p>
-            <label>
-              Message: <textarea name="message" value={message} onChange={handleChange} />
-            </label>
-          </p>
-          
-          <p>
-            <button type="submit">Send</button>
-          </p>
-        </form>
-        <h3>{status}</h3>
-    </div>
+      <div>
+        <h1> Contact Me!</h1>
+      </div>
+      <form onSubmit={handleSubmit} action="/thank-you/">
+            <p>
+            <h1>Name</h1>
+              <label>
+                 <input type="text" name="name" value={name} placeholder={'Name'} onChange={handleChange} />
+              </label>
+            </p>
+            <p>
+              <h1>Email:</h1>
+              <label>
+                 <input type="email" name="email" placeholder={'example@email.com'} value={email} onChange={handleChange} />
+              </label>
+            </p>
+            <p>
+            <h1>Message:</h1>
+              <label>
+                 <textarea name="message" value={message} onChange={handleChange} />
+              </label>
+            </p>
+            
+            <p>
+              <button type="submit">Send</button>
+            </p>
+          </form>
+          <h3>{status}</h3>
+      </div>
   );
 }

@@ -1,0 +1,48 @@
+div.App{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  margin: auto;
+  width: 50%;    
+  padding: 20px;
+  margin-top: auto;
+  text-align: center;
+  
+}
+
+div.App div h1{
+  color:#4169E1 ;
+  font-weight: 500;
+}
+.App p{
+  padding:10px;
+  display:inline-flex
+}
+.App p h1 {
+  padding:10px;
+  font-size: 1vw;
+  
+}
+.App input{
+  border-radius: 5px;
+  height: 40px;
+  width: 30vw ;
+  padding: 5px;
+  border-style: none;
+  
+}
+.App textarea{
+  border-radius: 5px;
+  height: 80px;
+  width: 40vw;
+  padding:10px;
+  border-style: none;
+}
+
+.App button{
+  height: 30px;
+  width: 10vw;
+  border-radius: 5px;
+  border-style: none;
+  background-color: aliceblue;
+
+}
