@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+//import { Form as Unform } from '@unform/web';
 //import img from './img/img3.jpeg'
 
 export const Header = styled.div` 
@@ -47,11 +48,8 @@ export const Container = styled.div`
 
 `;
 
-export const Section = styled.div`
-  
-  height: 100vh;
-  
-  
+export const Section = styled.div`  
+  height:100vh;
   
   img{
     max-width:100%;
@@ -96,22 +94,29 @@ export const PlayerWrapper = styled.div`
 export const Section2 = styled.div`
     font-family: monospace, Helvetica, sans-serif;
     background-color:#eee;
-    
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
     span{
       display:inline-block;        
     }
     article{
-      
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
 
+      width: 90%;
+      margin: 0 auto;
+      margin-top: -180px;
+
+    }
+    ul{
+      width: 90vw;
+      list-style-type: none;
     }
     li{
       padding: 30px;
     }
     h1{  
       font-size:2vw;    
-      width:40%;
-      margin-top:-150px;
+      
+      
       padding:20px;
       margin-left: 30px;
       
@@ -134,6 +139,16 @@ export const Section2 = styled.div`
       width:35vw;
       
     }
+`;
+
+/*export const Form = styled(Unform)`
+  
+`;
+*/
+export const Section3 = styled.div`
+  background-color:#90EE90;
+  height:50vh;
+  justify-content:center;
 `;
 
 export const Footer = styled.div`

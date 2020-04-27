@@ -1,13 +1,16 @@
 import React from 'react';
-import {Container,Section, Section2, Footer, PlayerWrapper} from './styles'
+import {Container,Section, Section2, Section3, Footer, PlayerWrapper} from './styles'
 import ReactPlayer from 'react-player'
+import FormikForm from "./FormikForm";
+
 
 export default function App() {
   return (
-    <Container>
-      
+    <Container>     
 
       <Section >
+        <span>
+
         <div>
 
           <h1>Arthur Iung</h1>
@@ -19,6 +22,7 @@ export default function App() {
           </h3>
         
         </div>
+        </span>
           <img src={require('./img/img3.jpeg')}
           alt=''></img>
       </Section>
@@ -65,6 +69,10 @@ export default function App() {
 
         </article>
       </Section2>
+
+      <Section3>
+        <FormikForm/>
+      </Section3>
 
       <Footer>
         <h1>Copyright © 2020</h1>
