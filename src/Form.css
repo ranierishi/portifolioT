@@ -44,5 +44,16 @@ div.App div h1{
   border-radius: 5px;
   border-style: none;
   background-color: aliceblue;
+  
 
+}
+
+.App button:hover {
+  background-color: #3e8e41
+}
+
+.App button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
