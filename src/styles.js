@@ -177,6 +177,8 @@ export const Section3 = styled.div`
   background-color:#90EE90;
   height:50vh;
   justify-content:center;
+  display:flex;
+  flex-flow:column;
 `;
 
 export const Footer = styled.div`
