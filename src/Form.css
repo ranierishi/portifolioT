@@ -44,12 +44,14 @@ div.App div h1{
   border-radius: 5px;
   border-style: none;
   background-color: aliceblue;
+  cursor: pointer;
   
 
 }
 
 .App button:hover {
   background-color: #3e8e41
+  
 }
 
 .App button:active {
